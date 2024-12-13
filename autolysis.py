@@ -75,7 +75,7 @@ def create_visualizations(data, max_visuals=3):
 
 # Function to communicate with the LLM
 def call_openai_api(prompt, model="gpt-4o-mini", max_tokens=300):
-    api_token = os.environ.get("AIPROXY_TOKEN")
+    api_token = os.environ.get("AI_PROXY")
     if not api_token:
         print("AIPROXY_TOKEN is not set. Please set it and try again.")
         sys.exit(1)
