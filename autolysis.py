@@ -1,12 +1,16 @@
 # /// script
+# requires-python = ">=3.11"
 # dependencies = [
-#     "pandas",
-#     "numpy",
-#     "seaborn",
-#     "matplotlib",
-#     "requests",
+#   "seaborn",
+#   "pandas",
+#   "matplotlib",
+#   "httpx",
+#   "chardet",
+#   "numpy",
 # ]
 # ///
+
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
