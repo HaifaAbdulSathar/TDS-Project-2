@@ -7,6 +7,9 @@
 #   "httpx",
 #   "chardet",
 #   "numpy",
+#   "platformdirs",
+#   "python-dotenv",
+#   "rich",
 # ]
 # ///
 
