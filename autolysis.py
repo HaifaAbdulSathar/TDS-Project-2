@@ -10,6 +10,7 @@
 #   "platformdirs",
 #   "python-dotenv",
 #   "rich",
+#   "uvicorn",
 # ]
 # ///
 
