@@ -11,6 +11,7 @@
 #   "python-dotenv",
 #   "rich",
 #   "uvicorn",
+#   "requests",
 # ]
 # ///
 
