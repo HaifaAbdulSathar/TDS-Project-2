@@ -135,11 +135,18 @@ def main():
         sys.exit(1)
 
     file_path = sys.argv[1]
+    if not os.path.exists(file_path):
+        print(f"File not found: {file_path}")
+        sys.exit(1)
+
     data = load_dataset(file_path)
     analysis = analyze_dataset(data)
     visualizations = create_visualizations(data)
 
-    # Generate the README content
+    if not visualizations:
+        print("No visualizations created. Check your dataset for numeric columns.")
+        sys.exit(1)
+
     narrative = generate_narrative(analysis, visualizations)
     with open("README.md", "w") as f:
         f.write("# Automated Data Analysis\n\n")
